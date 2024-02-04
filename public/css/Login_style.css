@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/kevin-mantey-3blbiaqt92w-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#form{
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fe9e5990;
+    backdrop-filter: blur(5px);
+}
+
+
+#form span{
+    width: 350px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #2A2550;
+    color: #2A2550;
+}
+#form input{
+    width: 300px;
+    font-size: 1.25em;
+    margin-left: 10px;
+    color: #2A2550;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+#form input::-webkit-input-placeholder{
+    color: #2A2550;
+}
+#form #passwordIcon{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#form button{
+    height: 45px;
+    width: 370px;
+    font-size: 1.2em;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    background-color: #2A2550;
+    color: #F47216;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#loginReply{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2A2550;
+}

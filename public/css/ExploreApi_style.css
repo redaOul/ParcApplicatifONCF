@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #f7e0cf;
+}
+
+main {
+    width: 900px;
+    padding: 130px 15px 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#haidContainer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+#haidContainer input{
+    width: 400px;
+    height: 50px;
+    font-size: 2em;
+    padding: 0px 15px;
+    margin-right: 7px;
+    color: #F47216;
+    border: none;
+    background-color: #d5d1dc;
+    border-bottom: #251D3A 4px solid;
+}
+#haidContainer input::-webkit-input-placeholder{
+    color: #F47216;
+}
+#haidContainer button{
+    height: 54px;
+    width: 54px;
+    margin-left: 7px;
+    cursor: pointer;
+    border: none;
+    color: #F47216;
+    background-color: #251D3A;
+}
+
+article{
+    margin-bottom: 20px;
+    height: 270px;
+    border-radius: 15px;
+    border: #F47216 5px solid;
+    background-color: #f4721669;
+}
+article .imgContainer{
+    float: left;
+    width: 200px;
+    height: 230px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article .imgContainer img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+article .infoContainer{
+    height: 230px;
+    margin-left: 245px;
+    padding-top: 20px;
+    color: #251D3A;
+}
+article .infoContainer h1{
+    height: 45px;
+    line-height: 45px;
+    font-size: 2em;
+    font-family:serif;
+    font-weight: bolder;
+}
+article .infoContainer table{
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+}
+article .infoContainer div{
+    height: 30px;
+    line-height: 30px;
+    font-weight: bolder;
+}
+article .infoContainer p{
+    height: 75px;
+    padding: 0 20px;
+}
+
+
+#detailsApiMmodal {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    position: fixed;
+    background-color: #f7e0cf9e;
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#modelContainer {
+    border-radius: 15px;
+    background-color: #f7e0cf;
+    border: #F47216 5px solid;
+}
+
+#backIcon {
+    margin: -5px -5px;
+    padding: 0 10px;
+    font-size: 3em;
+    border-radius: 15px 0 0 0;
+    color: #f7e0cf;
+    background-color: #F47216;
+    cursor: pointer;
+}
+
+#contentContainer{ 
+    width: 80vw;
+    height: 630px;
+    overflow-y: auto;
+}
+#imgContainer{
+    float: left;
+    width: 280px;
+    height: 335px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imgContainer img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+#infoContainer{
+    margin-left: 300px;
+    padding-bottom: 10px;
+    color: #251D3A;
+}
+#infoContainer h1{
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+    font-size: 2.4em;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-weight: bolder;
+}
+
+#gridContainer{
+    padding: 0 10px;
+    padding-top: 2px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 7px;
+    border-top: #ff8c00 5px solid;
+}
+#gridContainer .items{
+    padding-bottom: 5px;
+    border-bottom: #ff8c00 2px solid;
+}
+#gridContainer .subItems{
+    text-align: center;
+}
+#gridContainer .subItems :is(select, button){
+    width: 10vw;
+    padding: 5px 10px;
+    margin-top: 3px;
+    border-radius: 15px;
+    text-align: center;
+    color: #F47216;
+    background-color: #251D3A;
+    border: none;
+}
+#gridContainer .subItems button, a{
+    color: #F47216;
+    text-decoration: none;
+}
+#descContainer{
+    clear: left;
+    color: #251D3A;
+}
+#descContainer div{
+    height: 25px;
+    line-height: 25px;
+    margin-left: 20px;
+    font-size: 1.15em;
+    font-weight: bolder;
+}
+#descContainer p{
+    margin: 5px 40px;
+}
+
+
+@media screen and (max-width: 1090px) {
+    #detailsApiMmodal{ display: initial;}
+    #modelContainer{ 
+        margin: auto;
+        margin-top: 100px;
+        width: 95vw;
+    }
+    #backIcon {font-size: 2em;}
+    #contentContainer { 
+        width: 100%;
+        height: 630px;
+        overflow-y: auto;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #imgContainer{
+        float: none;
+        width: 90%;
+        height: 335px;
+        margin: auto;
+    }
+    #infoContainer{ margin: 0px 15px; }
+    #infoContainer h1{
+        margin: 0;
+        text-align: center;
+    }
+    #gridContainer .subItems :is(select, button){ width: 140px; }
+
+    #descContainer{
+        clear: left;
+        color: #251D3A;
+    }
+    #descContainer div{
+        height: 25px;
+        line-height: 25px;
+        margin-left: 20px;
+        font-size: 1.15em;
+        font-weight: bolder;
+    }
+    #descContainer p{
+        margin: 5px 40px;
+    }
+}

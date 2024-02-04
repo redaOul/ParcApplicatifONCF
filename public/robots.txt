@@ -1,0 +1,2 @@
+rUser-agent: *
+Disallow:
